@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+#main-header{
+  border: 1px solid blue;
+  margin-bottom: 10px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navlinks{
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: black;
+}
+
+.navlinks:hover{
+  cursor: pointer;
+  font-weight: 600;
+}
+
+label{
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+
+#login-form{
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 15px 35px 0;
+}
+
+.bio{
+  /* border: 1px solid green; */
+  margin: 10px 0;
+}
+
+input{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 5px;
+  font-size: 1rem;
+  border: 1px solid;
+}
+
+/* figure out how to take the forgot password feature to the right of the form field */
+#forgot-password{
+  text-align: right;
+}
+
+.fp{
+  /* border: 1px solid indigo; */
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+button{
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 1px solid;
+}
+
+button:hover{
+  background-color: lightblue;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.redirect-to-signup{
+  text-align: center;
+  font-size: 1rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a web app that is created to help teachers track their students performance">
+
+    <link rel="stylesheet" href="/css/login.css">
+
+    <title> Log In-Ducora</title>
+  </head>
+
+  <body>
+    <main>
+      <header id="main-header">
+        <nav class="navbar">
+          <ul class="navlinks">
+            <li><a href="signup.html" class="login">Sign Up</a></li>
+            <li><a href="#login.html" class="login">Log In</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <form id="login-form" method="POST" action="/ducora-login">
+        <div class="bio">
+          <label for="username-email">Username or Email:</label>
+          <input type="text" id="username-email" name="email" placeholder="enter your username or email" required>
+        </div> 
+        
+        <div class="bio">
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" placeholder="enter your password" required>
+        </div>
+        
+        <div id="forgot-password">
+          <!-- work on a way to let users reset their password in case they forget -->
+          <!-- figure out how to use the css combinators to target only this -->
+          <p class="fp"><a href="" target="_blank" class="login">Forgot password?</a></p>
+        </div>
+
+        <button type="submit">Log In</button>
+
+        <p class="redirect-to-signup">Don't have an account? <a href="signup.html" class="login">Sign Up</a></p>
+
+      </form>
+    </main>
+
+    <footer>
+      <p><small>Copyright &copy 2026</small></p>
+    </footer>
+  </body>
+</html>
