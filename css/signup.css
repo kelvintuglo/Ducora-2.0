@@ -102,6 +102,11 @@ button:hover{
   border: none;
 }
 
+button + p{
+  text-align: center;
+  margin-top: 10px;
+}
+
 .terms{
-  margin-bottom: 5px;
+  margin: 15px 0;
 }
