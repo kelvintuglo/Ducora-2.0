@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white; 
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+.form-wrapper{
+  border: 2px solid grey;
+  margin: auto 50px;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* max-width: 50%; */
+}
+
+#main-header{
+  padding: 10px;
+}
+
+.navlinks li{
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+#signup-form{
+  padding: 10px;
+}
+
+.login{
+  text-decoration: none;
+  color: firebrick;
+}
+
+.login:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  font-weight: 600;
+}
+
+.login:active{
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+}
+
+.bio label{
+  display: block;
+}
+
+.bio{
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.bio{
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.bio > label{
+  margin-bottom: 5px;
+  font-size: 17px;
+  padding: 3px;
+}
+
+.bio > input{
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1.5px solid;
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+button{
+  padding: 5px;
+  height: 2.8rem;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1.5px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+  background-color: firebrick;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.terms{
+  margin-bottom: 5px;
+}
