@@ -11,23 +11,17 @@ body{
 }
 
 .form-wrapper{
-  border: 2px solid grey;
-  margin: auto 50px;
+  border: 1px solid firebrick;
+  margin: auto;
   padding: 40px;
-  border-radius: 50px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /* max-width: 50%; */
+  max-width: 50%;
 }
 
 #main-header{
   padding: 10px;
-}
-
-.navlinks li{
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
-  font-size: 1.3rem;
+  text-align: center;
 }
 
 #signup-form{
@@ -52,6 +46,49 @@ body{
   font-weight: 600;
 }
 
+/* style for google login */
+.google{
+  /* border: 2px solid blue;  */
+  margin-bottom: 20px;
+}
+
+.google > button{
+  height: 2.8rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+}
+
+.google > button:hover{
+  cursor: pointer;
+  border: 2px solid firebrick;
+}
+
+.google img{
+  vertical-align: middle;
+  margin-bottom: 1px;
+  margin-right: 10px;
+}
+
+hr{
+  background-color: firebrick;
+  margin-bottom: 10px;
+}
+
+/* work on the gap and then the width in this state */
+.NAMES{
+  display: flex;
+  gap: 200px;
+  border: 1px soid green;
+}
+
+
 .bio label{
   display: block;
 }
@@ -68,20 +105,41 @@ body{
 
 .bio > label{
   margin-bottom: 5px;
-  font-size: 17px;
+  font-size: 1.0625rem;
   padding: 3px;
 }
 
-.bio > input{
+.bio input{
   height: 50px;
   width: 100%;
   border-radius: 5px;
   border: 1.5px solid;
-  padding: 0 5px;
-  font-size: 18px;
+  padding: 0 0 0 5px;
+  font-size: 1rem;
 }
 
-button{
+/* come to review and understand when I learn CSS position */
+.toggle-eye{
+  position: relative;
+}
+
+#toggle-password{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.bio input:focus{
+  outline: none;
+  border: 1px solid firebrick;
+}
+
+.submit-button{
   padding: 5px;
   height: 2.8rem;
   width: 100%;
@@ -94,7 +152,7 @@ button{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover{
+.submit-button:hover{
   background-color: firebrick;
   color: black;
   font-weight: 600;
