@@ -168,3 +168,30 @@ button + p{
 .terms{
   margin: 15px 0;
 }
+
+input[type="checkbox"]{
+  appearance: none;
+  border: 1px solid firebrick;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  transition: all 0.3s;
+  vertical-align: middle;
+  margin: 15px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+  background-color: firebrick;
+  border: firebrick;
+}
+
+input[type="checkbox"]:checked::after{
+  content: "✓"; 
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}

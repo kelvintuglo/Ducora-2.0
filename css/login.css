@@ -126,10 +126,33 @@ hr{
   border: 1px solid firebrick;
 }
 
-/* add the focus pseudo-class to the form input on 
-both the login and signup pages */
 
-/* also use the :checked pseudo-class on all checkboxes */
+input[type="checkbox"]{
+  appearance: none;
+  border: 1px solid firebrick;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 0.32;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin: 15px;
+}
+
+input[type="checkbox"]:checked{
+  background-color: firebrick;
+  border-color: firebrick;
+}
+
+input[type="checkbox"]:checked::after{
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}
 
 #forgot-password, .fp{
   padding: 5px;
