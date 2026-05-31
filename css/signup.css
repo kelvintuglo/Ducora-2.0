@@ -1,13 +1,23 @@
+:root{
+  --header-font: "Inter", sans-serif ;
+  --body-font: "Nunito", sans-serif ;
+}
+
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   background-color: white; 
   font-size: 1rem;
-  font-family: Arial, sans-serif;
+  font-family: var(--body-font);
   padding: 50px;
+}
+
+h1, h2, h3, label, button{
+  font-family: var(--header-font);
 }
 
 .form-wrapper{
@@ -48,7 +58,6 @@ body{
 
 /* style for google login */
 .google{
-  /* border: 2px solid blue;  */
   margin-bottom: 20px;
 }
 
@@ -80,14 +89,6 @@ hr{
   background-color: firebrick;
   margin-bottom: 10px;
 }
-
-/* work on the gap and then the width in this state */
-.NAMES{
-  display: flex;
-  gap: 200px;
-  border: 1px soid green;
-}
-
 
 .bio label{
   display: block;
