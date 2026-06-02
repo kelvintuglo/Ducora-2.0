@@ -23,7 +23,7 @@ h1, h2, h3, label, button{
 .form-wrapper{
   border: 1px solid firebrick;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 50%;
@@ -146,7 +146,6 @@ input[type="checkbox"]{
   cursor: pointer;
   width: 18px;
   height: 18px;
-  margin: 15px;
 }
 
 input[type="checkbox"]:checked{
@@ -163,15 +162,16 @@ input[type="checkbox"]:checked::after{
   line-height: 20px;
 }
 
-#forgot-password, .fp{
+#under-bio{
   padding: 5px;
-  margin-bottom: 5px;
+  margin: 15px 0;
+  display: flex;
 }
 
-.fp{
-  display: inline-block;
-  text-align: right;
+.checkmark{
+  flex-grow: 1;
 }
+
 
 .submit-button{
   padding: 5px;

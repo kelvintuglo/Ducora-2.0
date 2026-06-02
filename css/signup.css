@@ -23,7 +23,7 @@ h1, h2, h3, label, button{
 .form-wrapper{
   border: 1px solid firebrick;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 50%;
@@ -88,6 +88,15 @@ h1, h2, h3, label, button{
 hr{
   background-color: firebrick;
   margin-bottom: 10px;
+}
+
+.NAMES{
+  display: flex;
+  gap: 1rem;
+}
+
+.NAMES > .bio{
+  flex-grow: 1;
 }
 
 .bio label{
@@ -179,7 +188,6 @@ input[type="checkbox"]{
   background-color: white;
   transition: all 0.3s;
   vertical-align: middle;
-  margin: 15px;
   cursor: pointer;
 }
 

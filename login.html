@@ -52,14 +52,17 @@
             </div>
           </div>
           
-          <div id="forgot-password">
-            <!-- Remember me -->
-            <input type="checkbox" id="remember-me" name="remember-me">
-            <label for="remember-me">Remember Me</label>
+          <div id="under-bio">
+            <div class="checkmark">
+              <!-- Figure out how to keep the login details in the browser so the user wouldn't need to be logging in continuously  -->
+              <input type="checkbox" id="remember-me" name="remember-me">
+              <label for="remember-me" class="label">Remember Me</label>
+            </div>
 
-            <!-- work on a way to let users reset their password in case they forget -->
-            <!-- figure out how to use the css combinators to target only this -->
-            <p class="fp"><a href="" target="_blank" class="login">Forgot password?</a></p>
+            <div class="forgot-password">
+              <!-- work on a way to let users reset their password in case they forget -->
+              <p class="fp"><a href="" target="_blank" class="login">Forgot password?</a></p>
+            </div>
           </div>
 
           <button type="submit" class="submit-button">Log In</button>
