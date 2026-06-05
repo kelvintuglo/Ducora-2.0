@@ -13,6 +13,10 @@ body{
   font-family: var(--body-font);
 }
 
+h1, h2, h3, label, button{
+  font-family: var(--header-font);
+}
+
 .container{
   border: 1px solid firebrick;
   margin: 1.5rem;
@@ -27,15 +31,14 @@ form{
   margin-bottom: 5px;
 }
 
-/* for entering email */
-#forgot-password-form{
+#create-new-password{
   border: 1px dashed green;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
 }
 
-.enter-email > input{
+.set-new-password > input{
   height: 2.125rem;
   width: 100%;
   padding: 2px;
@@ -45,12 +48,12 @@ form{
   font-size: 1rem;
 }
 
-.enter-email  input:focus{
+.set-new-password  input:focus{
   outline: none;
   border: 1px solid firebrick;
 }
 
-.enter-email-btn{
+.new-auth-btn{
   font-size: 1rem;
   border: 1px solid;
   width: 50%;
@@ -61,7 +64,7 @@ form{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.enter-email-btn:hover{
+.new-auth-btn:hover{
   background-color: firebrick;
   color: black;
   font-weight: 600;

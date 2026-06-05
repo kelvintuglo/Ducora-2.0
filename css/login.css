@@ -13,44 +13,46 @@ body{
   background-color: white; 
   font-size: 1rem;
   font-family: var(--body-font);
-  padding: 50px;
+  padding: 3.125rem;
 }
 
 h1, h2, h3, label, button{
   font-family: var(--header-font);
 }
 
+
+/* figure out to use media */
 .form-wrapper{
   border: 1px solid firebrick;
   margin: auto;
-  padding: 30px;
+  padding: 1.875rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 50%;
 }
 
 #main-header{
-  padding: 10px;
+  padding: 0.625rem;
   text-align: center;
 }
 
 #login-form{
-  padding: 10px;
+  padding: 0.625rem;
 }
 
-.login{
+.link{
   text-decoration: none;
   color: firebrick;
 }
 
-.login:hover{
+.link:hover{
   cursor: pointer;
   text-decoration: underline;
   font-weight: 600;
   color: black;
 }
 
-.login:active{
+.link:active{
   text-decoration: underline;
   color: black;
   font-weight: 600;
@@ -58,7 +60,7 @@ h1, h2, h3, label, button{
 
 /* style for google login */
 .google{
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .google > button{
@@ -87,7 +89,7 @@ h1, h2, h3, label, button{
 
 hr{
   background-color: firebrick;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .bio label{
@@ -95,22 +97,22 @@ hr{
 }
 
 .bio{
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   padding: 0;
 }
 
 .bio > label{
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   font-size: 1.0625rem;
-  padding: 3px;
+  padding: 0.1875rem;
 }
 
 .bio input{
-  height: 50px;
+  height: 3.125rem;
   width: 100%;
   border-radius: 5px;
   border: 1.5px solid;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 0.3125rem;
   font-size: 1rem;
 }
 
@@ -121,13 +123,13 @@ hr{
 
 #toggle-password{
   position: absolute;
-  right: 10px;
+  right: 0.625rem;
   top: 50%;
   transform: translateY(-50%);
   background: none;
   border: none;
   cursor: pointer;
-  padding-right: 5px;
+  padding-right: 0.3125rem;
 }
 
 .bio input:focus{
@@ -135,6 +137,20 @@ hr{
   border: 1px solid firebrick;
 }
 
+#under-bio{
+  padding: 0.3125rem;
+  margin: 0.9375rem 0;
+  display: flex;
+
+  /* use media queries to make these stack on top of each other
+  with a little space */
+  flex-wrap: wrap;
+  gap: 0.3125rem;
+}
+
+.checkmark{
+  flex-grow: 1;
+}
 
 input[type="checkbox"]{
   appearance: none;
@@ -144,8 +160,8 @@ input[type="checkbox"]{
   transition: all 0.32;
   vertical-align: middle;
   cursor: pointer;
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 input[type="checkbox"]:checked{
@@ -159,29 +175,18 @@ input[type="checkbox"]:checked::after{
   text-align: center;
   font-weight: bold;
   color: white;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
-
-#under-bio{
-  padding: 5px;
-  margin: 15px 0;
-  display: flex;
-}
-
-.checkmark{
-  flex-grow: 1;
-}
-
 
 .submit-button{
-  padding: 5px;
+  padding: 0.3125rem;
   height: 2.8rem;
   width: 100%;
   font-size: 1rem;
   text-align: center;
   border: none;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   border: 1.5px solid black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -196,5 +201,5 @@ input[type="checkbox"]:checked::after{
 
 .redirect-to-signup{
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }

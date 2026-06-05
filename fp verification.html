@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/fp verification.css">
+
+    <title>Forgot Password Verification</title>
+  </head>
+
+  <body>
+
+    <!-- 
+      1. auth the verification code
+      2. navigate to create new password if the verification code is correct
+      3. if the verication code doesn't match let them request a new code
+      4. add a 1.30s timer for every verification code requested
+    -->
+    <main class="container">
+      <form id="fp-email-auth" method="POST" action="/ducora/fp-emai-auth">
+        <div class="auth">
+          <label for="auth">Enter Verification Code: </label>
+          <input type="number" id="auth" name="auth" placeholder="enter verification code" required>
+        </div>
+
+        <button type="submit" class="auth-btn"><a href="/fp new.html">Submit</a></button>
+
+        <!-- resend another code to the users already provided email address -->
+        <p id="resend-code"><a href="">Resend code</a></p>
+      </form>
+    </main>
+  </body>
+</html>
